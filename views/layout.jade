@@ -1,0 +1,44 @@
+html
+  head
+    title= title
+    block head_meta
+      meta(http-equiv='X-UA-Compatible' content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+      meta(charset='utf-8')
+      meta(name='Author', content='Graham McCulloch')
+      meta(name='Description', content='Gigle displays upcoming concerts listed on Songkick on a Google Map')
+      meta(name='Keywords', content='Songkick, concert, gig, map, location, Google')
+
+    block head_links
+      link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+      link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      link(rel='Shortcut Icon', type='image/x-icon' href='/ico/favicon.ico')
+      link(rel='apple-touch-icon', href='/ico/apple-touch-icon-precomposed.png')
+      link(rel='apple-touch-icon', sizes='72x72' href='/ico/apple-touch-icon-72x72-precomposed.png')
+      link(rel='apple-touch-icon', sizes='114x114' href='/ico/apple-touch-icon-114x114-precomposed.png')
+      link(rel='apple-touch-icon', sizes='144x144' href='/ico/apple-touch-icon-144x144-precomposed.png')
+
+    block head_scripts
+
+  body
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              a(href='/', title='Home' rel='home')
+                img.masthead-brand(src='/images/logo.png' alt='Gigle')
+              a.credits(href='http://www.songkick.com', target='_blank', title='Songkick.com')
+                img(src='//cdn.brandisty.com/img?id=53bd1e333926f2376100006b&w=114&h=28' alt='Concerts by Songkick.com')
+
+          .inner.cover
+            block content
+          .mastfoot
+            .inner
+              p.credits &copy;&nbsp;
+                a(href='mailto:admin@grahammcculloch.co.uk') Graham McCulloch
+
+    block body_scripts
+      script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js')
