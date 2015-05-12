@@ -36,4 +36,7 @@ Then load `http://localhost:3000/` in your browser to access the app.
 
 ### Live site
 Gigle is currently being served from [Cloud9](https://c9.io/). You can view the live site here:
+
 [https://gigle-grahammcculloch.c9.io/](https://gigle-grahammcculloch.c9.io/)
+
+Note that this site is running on a virtual server that does periodically get 'sent to sleep' - so it may not be up at all times.

@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+/* Auto-generated using Express Generator
+ * Ref: http://expressjs.com/starter/generator.html
+ */
+
 /**
  * Module dependencies.
  */
