@@ -4,7 +4,7 @@
  * NOTE: We use JSONP as the Songkick API does not support CORS.
  */
 app.factory('Event', function($resource) {
-    return $resource("http://api.songkick.com/api/3.0/events.json?jsoncallback=angular.callbacks._0", {}, {
+    return $resource("//api.songkick.com/api/3.0/events.json?jsoncallback=angular.callbacks._0", {}, {
         jsonp_query: {
             method: 'JSONP'
         }
